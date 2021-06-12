@@ -1,0 +1,274 @@
+<html>
+        <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>testing</title>
+                <script src="https://kit.fontawesome.com/6589c94133.js" crossorigin="anonymous"></script>
+
+        <script>
+                var arr = new Array();
+                var max = 0;
+                var index = 0;
+                for(var i=0; i<8; i++){
+                        arr[i] = 0;
+                }
+
+                function next1(){
+                        first.style.display = "none";
+                        Q1.style.display = "block";
+                }
+                function next2(){
+                        Q1.style.display = "none";
+                        Q2.style.display = "block";
+                }
+                function next3(){
+                        Q2.style.display = "none";
+                        Q3.style.display = "block";
+                }
+                function next4(){
+                        Q3.style.display = "none";
+                        Q4.style.display = "block";
+                }
+                function next5(){
+                        Q4.style.display = "none";
+                        Q5.style.display = "block";
+                }
+                function next6(){
+                        Q5.style.display = "none";
+                        Q6.style.display = "block";
+                }
+                function next7(){
+                        Q6.style.display = "none";
+                        Q7.style.display = "block";
+                }
+                function next8(){
+                        Q7.style.display = "none";
+                        Q8.style.display = "block";
+                }
+                function next9(){
+                        Q8.style.display = "none";
+                        third.style.display = "block";
+                }
+                function next10(){
+                        third.style.display = "none";
+                        final.style.display = "block";
+                }
+
+
+                function result(id){
+                        const result = id.split(" ");
+                        for( var i=0; i<4; i++){
+                                arr[result[i]]++;
+                        }
+                        console.log(result);
+                        for(var i=0; i<8; i++){
+                                if(max<arr[i]){
+                                        max = arr[i];
+                                        index = i;
+                                        console.log("max= ", index);
+                                }
+                        }
+                }
+                function finalResult(){
+                        console.log("here!!");
+                        if(index == 0){
+                                document.write("<h2 style=\"font-family:'Mate SC', serif; position:relative; left:40%; top:10px;\">R   E   S   U   L   T</h2>");
+                                document.write("<img src=\"./img/result0.jpg\" style=\"width:45%; position:relative; left:30%; top:4px; \">");
+                                document.write("<p style=\"font-family:'Mate SC', serif; position:relative; left:13%; margin:20px 50px; font-size:10px; width:70%\">You have a bright and positive personality like Elsa! You have an adult side. However, when the inner fear is expressed, it is vulnerable.</p>");
+                        }
+
+                        if(index == 1){
+                                document.write("<h2 style=\"font-family:'Mate SC', serif; position:relative; left:40%; top:10px;\">R   E   S   U   L   T</h2>");
+                                document.write("<img src=\"./img/result1.jpg\" style=\"width:45%; position:relative; left:30%; top:4px; \">");
+                                document.write("<p style=\"font-family:'Mate SC', serif; position:relative; left:13%; margin:20px 50px; font-size:10px; width:70%\">You are naive and love-dreaming Snow White! You have a great sociability that quickly gets to know people and makes them on their side.</p>");
+                        }
+                        if(index == 2){
+                                document.write("<h2 style=\"font-family:'Mate SC', serif; position:relative; left:40%; top:10px;\">R   E   S   U   L   T</h2>");
+                                document.write("<img src=\"./img/result2.jpg\" style=\"width:45%; position:relative; left:30%; top:4px; \">");
+                                document.write("<p style=\"font-family:'Mate SC', serif; position:relative; left:13%;  margin:20px 50px; font-size:10px; width:70%\">You, like Rapunzel, who is very curious and has a lively personality! You don't like being locked up but like looking for new things.</p>");
+                        }
+
+                        if(index == 3){
+                                document.write("<h2 style=\"font-family:'Mate SC', serif; position:relative; left:40%; top:10px;\">R   E   S   U   L   T</h2>");
+                                document.write("<img src=\"./img/result3.jpg\" style=\"width:35%; position:relative; left:35%; top:4px; \">");
+                                document.write("<p style=\"font-family:'Mate sc', serif; position:relative; left:13%; margin:20px 50px; font-size:10px; width:70%\">You, like Bell, who has an elegant and intelligent personality! You prefer to live actively rather than passively and dependently.</p>");
+                        }
+                        if(index == 4){
+                                document.write("<h2 style=\"font-family:'Mate SC', serif; position:relative; left:40%; top:10px;\">R   E   S   U   L   T</h2>");
+                                document.write("<img src=\"./img/result4.jpg\" style=\"width:45%; position:relative; left:30%; top:4px; \">");
+                                document.write("<p style=\"font-family:'Mate sc', serif; position:relative; left:13%; margin:20px 50px; font-size:10px; width:70%\">You are so active like Mulan! You have a little fiery personality. You don't like to be tied to ideas and you have a clear opinion.</p>");
+                        }
+                        if(index == 5){
+                                document.write("<h2 style=\"font-family:'Mate SC', serif; position:relative; left:40%; top:10px;\">R   E   S   U   L   T</h2>");
+                                document.write("<img src=\"./img/result5.jpg\" style=\"width:30%; position:relative; left:37%; top:4px; \">");
+                                document.write("<p style=\"font-family:'Mate sc', serif; position:relative; left:13%; margin:20px 50px; font-size:10px; width:70%\">You, who are like Jasmine, who has an active and strong personality, are good at rejecting and being independent. You know right from wrong because you have a smart head.</p>");
+                        }
+                        if(index == 6){
+                                document.write("<h2 style=\"font-family:'Mate SC', serif; position:relative; left:40%; top:10px;\">R   E   S   U   L   T</h2>");
+                                document.write("<img src=\"./img/result6.jpg\" style=\"width:45%; position:relative; left:30%; top:4px; \">");
+                                document.write("<p style=\"font-family:'Mate sc', serif; position:relative; left:13%; margin:20px 50px; font-size:10px; width:70%\">You are like Olaf, who loves people around him very much! You can sacrifice everything for people you are about the most. Because I have a warm personality, I can melt the frozen person's heart.</p>");
+                        }
+                        if(index == 7){
+                                document.write("<h2 style=\"font-family:'Mate SC', serif; position:relative; left:40%; top:10px;\">R   E   S   U   L   T</h2>");
+                                document.write("<img src=\"./img/result7.jpg\" style=\"width:25%; position:relative; left:40%; top:4px; \">");
+                                document.write("<p style=\"font-family: 'Mate sc', serif; position:relative; left:13%; margin:20px 50px; font-size:10px; width:70%\">You are like a passionate Peter Pan! It's so unpredictable and exciting that people around you fall in love with it. People around you pay attention to your personality that you don't know where to stand out. You have an excellent imagination like a child.</p>");
+                        }
+                }
+
+
+        </script>
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+                #first{
+                        background-image:url('./img/background.png');
+                        height:100vh;
+                        max-width: 100%;
+                        background-size:cover;
+                }
+                h1{
+                        position:fixed;
+                        right:35px;
+                        top:70px;
+                }
+                #container{
+                        max-width:100%;
+                        height:auto;
+                        width:70%;
+                }
+                #center{
+                        background-color:#b0c4de;
+                        width:70%;
+                        height:97%;
+                        border-radius:20px;
+                        position:relative;
+                        left:15%;
+                        top:50%;
+                }
+                button{
+                        width:90%;
+                        border:none;
+                        border-radius:7px;
+                        background-color:white;
+                        opacity:60%;
+                        margin:5px 15px;
+                        height:10%;
+                        font-family:'Mate SC', serif;
+                }
+                #button{
+                        opacity:30%;
+                        position:fixed;
+                        left:50%;
+                        top:80%;
+                }
+                button:hover{
+                        background:#b0c4de;
+                        border:3px;
+                        border-style:inset;
+                        color:white;
+                }
+                p{
+                        text-align:center;
+                        position:relative;
+                        top:20px;
+                        margin:10px;
+                        margin-bottom:30px;
+                        font-family:'Mate SC', serif;
+                        font-size:15px;
+                }
+                #result{
+                        font-size:40px;
+                        width:30%;
+                        position:fixed;
+                        top:30%;
+                        left:30%;
+                        height:30%;
+                }
+                #jstext{
+                        text-align:center;
+                }
+        </style>
+
+        </head>
+
+        <body>
+                <div style="background-color:white;" class = "container mx-auto">
+                        <section id="first">
+                                <h1 style="color:white; font-family:'Mate SC', serif; font-size:20px;">PERSONALITY TESTING</h1>
+                                <button type="button" id="button" style="top:70%; width:20%; height:13%; left:77%; font-size:20px; color:navy;" onclick="next1();">s t a r t !</button>
+                        </section>
+
+                        <section id="second">
+                                <section id="Q1" style="display:none;">
+                                <div id="center" style="top:30%;">
+                                <p>To express myself in one color, which color suits me best?</p>
+                                <button type="button" id="1 2 3 4" onclick="result(this.id); next2()">white</button>
+                                <button type="button" id="2 3 4 5" onclick="result(this.id); next2()">red</button>
+                                <button type="button"id="3 4 5 6"  onclick="result(this.id); next2()">black</button>
+                                <button type="button" id="4 5 6 7" onclick="result(this.id); next2()">purple</button>
+                                </div></section>
+
+                                <section id="Q2" style="display:none;">
+                                <div id="center">
+                                <p>Where do you want to travel?</p>
+                                <button type="button" id="0 1 6 7"onclick="result(this.id); next3()">amusement park</button>
+                                <button type="button" id="2 3 4 5" onclick="result(this.id); next3()">beach</button>
+                                <button type="button" id="0 2 4 6" onclick="result(this.id); next3()">mountain</button>
+                                </div></section>
+
+                                <section id="Q3" style="display:none;">
+                                <div id="center">
+                                <p>What do you do when you make a trip?</p>
+                                <button type="button" id="4 6 0 7" onclick="result(this.id); next4()">All schedules are pre-arranged in full detail.</button>
+                                <button type="button" id="0 4 5 3" onclick="result(this.id); next4()">What's the plan? Just pick a place to go.</button>
+                                </div></section>
+
+                                <section id="Q4" style="display:none;">
+                                <div id="center">
+                                <p>I did all the preparations, but the appointment were canceled. So what are you gonna do?</p>
+                                <button type="button" id="1 2 5 0" onclick="result(this.id); next5()">I make an appointment with anotehr friend right way.</button>
+                                <button type="button" id="0 3 2 6" onclick="result(this.id); next5()">I'm so happy. What should I do at thome?</button>
+                                </div></section>
+
+                                <section id="Q5" style="display:none;">
+                                <div id="center">
+                                <p>What house do you want to live in in the future?</p>
+                                <button type="button" id="1 2 5 7" onclick="result(this.id); next6()">A large house with a large garden</button>
+                                <button type="button" id="0 7 3 6" onclick="result(this.id); next6()">A luxurious apartment</button>
+                                <button type="button" id="1 7 0 2" onclick="result(this.id); next6()">A log cabin with an ocean view</button>
+                                </div></section>
+
+                                <section id="Q6" style="display:none;">
+                                <div id="center">
+                                <p>What seat do you sit in when you sit in the room?</p>
+                                <button type="button" id="1 2 5 7" onclick="result(this.id); next7()">Sit in the iddle</button>
+                                <button type="button" id="3 4 5 6" onclick="result(this.id); next7()">Sit on the wall</button>
+                                </div></section>
+
+                                <section id="Q7" style="display:none;">
+                                <div id="center">
+                                <p>What kind of music do you usually listen to?</p>
+                                <button type="button" id="0 7 5 6" onclick="result(this.id); next8()">The lyrics are important! A song with good lyrics.</button>
+                                <button type="button" id="2 3 7 0" onclick="result(this.id); next8()">The melody is more important than the lyrics!</button>
+                                </div></section>
+
+                                <section id="Q8" style="display:none;">
+                                <div id="center">
+                                <p>What kind of clothes do you usually wear?</p>
+                                <button type="button" id="1 2 5 7" onclick="result(this.id); next9()">Modern and simple</button>
+                                <button type="button" id="0 3 5 7" onclick="result(this.id); next9()">Casual</button>
+                                <button type="button" id="1 0 6 7" onclick="result(this.id); next9()">Don't care</button>
+                                </div>
+                                </section>
+                        </section>
+
+                        <section id="third" style="display:none;">
+                                <button type="button" id="result" onclick="finalResult(); next10()">result</button>
+                        </section>
+
+                        <section id="final" style="display:none; background-color:black;">
+                                <img src="./img/result0.jpg">
+                        </section>
+
+                </div>
+        </body>
+</html>
