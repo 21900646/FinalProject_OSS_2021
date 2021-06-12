@@ -23,7 +23,7 @@ html, css, javascript
 If you have a question, Please email gkdms7808@naver.com. 
 
 ## Presentation Video Link
-
+https://www.youtube.com/watch?v=ZSMMJeBp1-Y
 
 ## Reference
 https://www.w3schools.com/
