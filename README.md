@@ -1,7 +1,7 @@
 # FinalProject_OSS_2021
 # Project - Personality Test
 ## What does this project do?
-This project is a personality type test such as MBTI. 
+This project is a personality type test such as MBTI. When the user chooses the answers to the questions, they analyze the answers and tell them who the similar characters are. Each answer's id has an index of characters with similar personalities, and based on this, the character with the most frequent index is the final result. 
 
 
 ## Why is this project useful?
