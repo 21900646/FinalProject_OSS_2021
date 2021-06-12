@@ -19,6 +19,10 @@ The era of propensity testing has opened as the MZ generation types and shares t
 ## Language
 html, css, javascript
 
+## algorithms
+![image](https://user-images.githubusercontent.com/69943167/121779091-ec20a600-cbd4-11eb-9487-7280087641fb.png)
+
+
 ## Where can I get more help, if I need it?
 If you have a question, Please email gkdms7808@naver.com. 
 
